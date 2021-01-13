@@ -321,7 +321,7 @@ class: middle
 
 # Summary
 
-- PyProb is a novel probabilistic software framework to execute and control exisiting HPC simulator code bases.
+- PyProb is a probabilistic software framework to execute and control exisiting HPC simulator code bases.
 - Synchronous data parallel training of a NN is made possible thanks to HPC.
 - AI-powered probabilistic programming is for the first time practical for large-scale, real-word science models.
 
@@ -338,6 +338,8 @@ This is just the beginning...
 .center.width-100[![](./figures/team.png)]
 
 ---
+
+count: false
 
 # References
 
