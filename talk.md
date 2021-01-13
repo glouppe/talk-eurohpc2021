@@ -123,7 +123,8 @@ class: middle
 - This is hard and computationally costly.
   - Need to run simulator up to millions of times
   - Simulator execution and MCMC inference are sequential
-- ... but we can amortize the cost of inference using **deep learning**.
+  - MCMC has "burn-in" and autocorrelation.
+- But we can amortize the cost of inference using **deep learning**.
 
 ---
 
@@ -303,7 +304,7 @@ class: middle
 
 ## Science results
 
-.center.width-60[![](./figures/science-result.gif)]
+.center.width-65[![](./figures/science-result.gif)]
 
 ---
 
