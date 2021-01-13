@@ -186,8 +186,8 @@ class: middle, black-slide
 ## Large Hadron Collider
 
 - Seek to uncover secrets of the universe (new particles).
-- Physicists compare observed data to detailed simulations, using billions of CPU hours for scans of simulation parameters.
-- PyProb replaces this with automated, efficient inference, grounded in a statistical framework.
+- Today, physicists compare observed data to detailed simulations, using billions of CPU hours for scans of simulation parameters (inefficient, labor-intensive, sometimes ad-hoc).
+- PyProb replaces this with automated, efficient inference; grounded in a statistical framework.
 
 ---
 
@@ -195,9 +195,9 @@ class: middle
 
 ## Physics expressed in simulator code
 
-- We use popular **existing** Sherpa simulation (1M lines of C++ code).
-- In this simulator, the execution trace represents particle physics collisions and decays.
-- It enables interpretability by relating a detector observation to possible traces that can be related back to the physics.
+- We base on our proof-of-principle on **existing** Sherpa simulation (1M lines of C++ code).
+- Execution traces represent particle physics collisions and decays.
+- PyProb will enable interpretability by relating a detector observation to possible traces that can be related back to the physics.
 
 .center.width-100[![](./figures/trace-sherpa.png)]
 
@@ -276,8 +276,10 @@ class: middle
 .kol-1-2[
 ## Large-scale training
 
-- Fully synchronous data parallel training on 1024 nodes
-- 128000 global mini-batch size
+
+- Dataset of 15M Sherpa execution traces (1.7 TB)
+- Fully synchronous data parallel training on 1024 nodes (32768 cores) using PyTorch-MPI
+- Global mini-batch size of 128000
 - Overall 14000x speedup
   - Months of training in minutes
   - Ability to retrain model quickly is transformative for research
@@ -306,6 +308,8 @@ class: middle
 
 .center.width-65[![](./figures/science-result.gif)]
 
+.center[First tractable Bayesian inference for LHC physics<br>(Full posterior and interpretability)]
+
 ---
 
 # Summary
@@ -313,6 +317,10 @@ class: middle
 - PyProb is a novel probabilistic software framework to execute and control exisiting HPC simulator code bases.
 - Synchronous data parallel training of a NN is made possible thanks to HPC.
 - AI-powered probabilistic programming is for the first time practical for large-scale, real-word science models.
+
+This is just the beginning...
+
+.center.width-70[![](./figures/simulators.png)]
 
 ---
 
