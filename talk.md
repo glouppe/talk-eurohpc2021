@@ -124,7 +124,14 @@ class: middle
   - Need to run simulator up to millions of times
   - Simulator execution and MCMC inference are sequential
   - MCMC has "burn-in" and autocorrelation.
-- But we can amortize the cost of inference using **deep learning**.
+
+---
+
+class: middle, center
+
+.center.width-60[![](./figures/nn.png)]
+
+Good news: We can amortize the cost of inference using **deep learning**.
 
 ---
 
