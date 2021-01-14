@@ -283,7 +283,7 @@ class: middle
 .kol-1-2[
 ## Large-scale training
 
-
+- Neural network with 170M parameters
 - Dataset of 15M Sherpa execution traces (1.7 TB)
 - Fully synchronous data parallel training on 1024 nodes (32768 cores) using PyTorch-MPI
 - Global mini-batch size of 128000
